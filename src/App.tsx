@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+// import UserVideos from './component/userVideo';
+import Signin from './component/signin';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className=" flex ">
+        <Signin />
+      </div>
+      {/* <div className="flex">
+        <h3>YouTube User Videos:</h3>
+        <div className="w-12">
+          <UserVideos />
+        </div>
+      </div> */}
     </div>
   );
-}
+};
 
 export default App;
